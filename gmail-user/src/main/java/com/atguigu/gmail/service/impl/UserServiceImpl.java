@@ -1,8 +1,8 @@
-package com.atguigu.gmail.user.service.impl;
+package com.atguigu.gmail.service.impl;
 
-import com.atguigu.gmail.user.bean.UmsMember;
-import com.atguigu.gmail.user.mapper.UserMapper;
-import com.atguigu.gmail.user.service.UserService;
+import com.atguigu.gmail.bean.UmsMember;
+import com.atguigu.gmail.mapper.UserMapper;
+import com.atguigu.gmail.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

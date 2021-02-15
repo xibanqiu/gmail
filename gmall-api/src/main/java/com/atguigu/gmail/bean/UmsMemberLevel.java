@@ -1,4 +1,4 @@
-package com.atguigu.gmail.user.bean;
+package com.atguigu.gmail.bean;
 
 import java.io.Serializable;
 import java.util.Date;

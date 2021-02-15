@@ -1,10 +1,10 @@
-package com.atguigu.gmail.user.controller;
+package com.atguigu.gmail.controller;
 
 
-import com.atguigu.gmail.user.bean.UmsMember;
-import com.atguigu.gmail.user.bean.UmsMemberReceiveAddress;
-import com.atguigu.gmail.user.service.UmsMemberReceiveAddressService;
-import com.atguigu.gmail.user.service.impl.UserServiceImpl;
+import com.atguigu.gmail.bean.UmsMemberReceiveAddress;
+import com.atguigu.gmail.service.UmsMemberReceiveAddressService;
+import com.atguigu.gmail.service.impl.UserServiceImpl;
+import com.atguigu.gmail.bean.UmsMember;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,12 +21,6 @@ public class UserController {
     @Autowired
     UmsMemberReceiveAddressService umsMemberReceiveAddressService;
 
-
-    @RequestMapping("test")
-    @ResponseBody
-    public String test(){
-        return "test";
-    }
 
     @RequestMapping("getAllUsers")
     @ResponseBody

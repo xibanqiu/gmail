@@ -1,6 +1,6 @@
-package com.atguigu.gmail.user.mapper;
+package com.atguigu.gmail.mapper;
 
-import com.atguigu.gmail.user.bean.UmsMember;
+import com.atguigu.gmail.bean.UmsMember;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
