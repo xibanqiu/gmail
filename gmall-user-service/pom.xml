@@ -2,22 +2,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
+
+    <groupId>com.atguigu.gmall</groupId>
+    <artifactId>gmall-user-service</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>gmall-user-service</name>
+    <description>Demo project for Spring Boot</description>
+    <properties>
+        <java.version>11</java.version>
+    </properties>
+
     <parent>
         <groupId>com.atguigu.gmall</groupId>
         <artifactId>gmall-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
-
-    <groupId>com.atguigu.gmail</groupId>
-    <artifactId>gmail-user</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>gmail-user</name>
-    <description>Demo project for Spring Boot</description>
-
-
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
 
     <dependencies>
         <dependency>
@@ -25,18 +26,18 @@
             <artifactId>gmall-api</artifactId>
             <version>1.0.1</version>
         </dependency>
-
         <dependency>
             <groupId>com.atguigu.gmall</groupId>
             <artifactId>gmall-service-util</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
         <dependency>
-            <groupId>com.atguigu.gmall</groupId>
-            <artifactId>gmall-web-util</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
         </dependency>
+
     </dependencies>
 
     <build>
@@ -47,6 +48,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>

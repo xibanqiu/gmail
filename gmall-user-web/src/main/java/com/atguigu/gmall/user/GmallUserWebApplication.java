@@ -1,13 +1,13 @@
-package com.atguigu.gmail;
+package com.atguigu.gmall.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GmailUserApplication {
+public class GmallUserWebApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GmailUserApplication.class, args);
+        SpringApplication.run(GmallUserWebApplication.class, args);
     }
 
 }

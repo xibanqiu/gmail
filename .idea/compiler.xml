@@ -9,17 +9,23 @@
         <module name="gmall-common-util" />
         <module name="service-provider" />
         <module name="service-consumer" />
-        <module name="gmail-user" />
+        <module name="gmall-user-web" />
         <module name="service-api" />
         <module name="gmall-api" />
         <module name="gmall-service-util" />
+        <module name="gmall-user-service" />
         <module name="gmall-web-util" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gmail-user" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="gmail-user" options="" />
+      <module name="gmall-user-service" options="" />
+      <module name="gmall-user-web" options="" />
     </option>
   </component>
 </project>
