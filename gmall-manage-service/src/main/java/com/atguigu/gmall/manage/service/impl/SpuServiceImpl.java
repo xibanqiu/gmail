@@ -1,6 +1,7 @@
 package com.atguigu.gmall.manage.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
+
 import com.atguigu.gmail.bean.PmsProductImage;
 import com.atguigu.gmail.bean.PmsProductInfo;
 import com.atguigu.gmail.bean.PmsProductSaleAttr;
@@ -10,6 +11,7 @@ import com.atguigu.gmall.manage.mapper.PmsProductImageMapper;
 import com.atguigu.gmall.manage.mapper.PmsProductInfoMapper;
 import com.atguigu.gmall.manage.mapper.PmsProductSaleAttrMapper;
 import com.atguigu.gmall.manage.mapper.PmsProductSaleAttrValueMapper;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
@@ -23,22 +25,21 @@ public class SpuServiceImpl implements SpuService {
     @Autowired
     PmsProductImageMapper pmsProductImageMapper;
 
-     @Autowired
-     PmsProductSaleAttrMapper pmsProductSaleAttrMapper;
+    @Autowired
+    PmsProductSaleAttrMapper pmsProductSaleAttrMapper;
 
-     @Autowired
-     PmsProductSaleAttrValueMapper pmsProductSaleAttrValueMapper;
-
-
+    @Autowired
+    PmsProductSaleAttrValueMapper pmsProductSaleAttrValueMapper;
 
     @Override
     public List<PmsProductInfo> spuList(String catalog3Id) {
 
+
         PmsProductInfo pmsProductInfo = new PmsProductInfo();
         pmsProductInfo.setCatalog3Id(catalog3Id);
+        List<PmsProductInfo> pmsProductInfos = pmsProductInfoMapper.select(pmsProductInfo);
 
-        return pmsProductInfoMapper.select(pmsProductInfo);
-
+        return pmsProductInfos;
     }
 
     @Override
@@ -102,4 +103,26 @@ public class SpuServiceImpl implements SpuService {
 
     }
 
+    @Override
+    public List<PmsProductSaleAttr> spuSaleAttrListCheckBySku(String productId,String skuId) {
+
+//        PmsProductSaleAttr pmsProductSaleAttr = new PmsProductSaleAttr();
+//        pmsProductSaleAttr.setProductId(productId);
+//        List<PmsProductSaleAttr> pmsProductSaleAttrs = pmsProductSaleAttrMapper.select(pmsProductSaleAttr);
+//
+//        for (PmsProductSaleAttr productSaleAttr : pmsProductSaleAttrs) {
+//            String saleAttrId = productSaleAttr.getSaleAttrId();
+//
+//            PmsProductSaleAttrValue pmsProductSaleAttrValue = new PmsProductSaleAttrValue();
+//            pmsProductSaleAttrValue.setSaleAttrId(saleAttrId);
+//            pmsProductSaleAttrValue.setProductId(productId);
+//            List<PmsProductSaleAttrValue> pmsProductSaleAttrValues = pmsProductSaleAttrValueMapper.select(pmsProductSaleAttrValue);
+//
+//            productSaleAttr.setSpuSaleAttrValueList(pmsProductSaleAttrValues);
+//
+//        }
+
+        List<PmsProductSaleAttr> pmsProductSaleAttrs = pmsProductSaleAttrMapper.selectSpuSaleAttrListCheckBySku(productId,skuId);
+        return pmsProductSaleAttrs;
+    }
 }
