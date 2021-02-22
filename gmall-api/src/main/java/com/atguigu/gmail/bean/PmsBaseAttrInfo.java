@@ -1,6 +1,5 @@
 package com.atguigu.gmail.bean;
 
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
@@ -62,16 +61,5 @@ public class PmsBaseAttrInfo implements Serializable {
 
     public void setAttrValueList(List<PmsBaseAttrValue> attrValueList) {
         this.attrValueList = attrValueList;
-    }
-
-    @Override
-    public String toString() {
-        return "PmsBaseAttrInfo{" +
-                "id='" + id + '\'' +
-                ", attrName='" + attrName + '\'' +
-                ", catalog3Id='" + catalog3Id + '\'' +
-                ", isEnabled='" + isEnabled + '\'' +
-                ", attrValueList=" + attrValueList +
-                '}';
     }
 }

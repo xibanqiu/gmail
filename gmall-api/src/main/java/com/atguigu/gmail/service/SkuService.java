@@ -1,8 +1,6 @@
 package com.atguigu.gmail.service;
 
-
-
-import com.atguigu.gmail.bean.PmsSkuInfo;
+import com.atguigu.gmall.bean.PmsSkuInfo;
 
 import java.util.List;
 
@@ -12,4 +10,7 @@ public interface SkuService {
     PmsSkuInfo getSkuById(String skuId, String ip);
 
     List<PmsSkuInfo> getSkuSaleAttrValueListBySpu(String productId);
+
+    List<PmsSkuInfo> getAllSku(String catalog3Id);
+
 }

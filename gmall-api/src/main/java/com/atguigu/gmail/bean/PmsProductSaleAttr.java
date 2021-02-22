@@ -1,8 +1,5 @@
 package com.atguigu.gmail.bean;
 
-
-import org.apache.ibatis.annotations.Property;
-
 import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.Transient;

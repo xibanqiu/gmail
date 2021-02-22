@@ -1,0 +1,5 @@
+com\atguigu\gmail\bean\UmsMemberLevel.class
+com\atguigu\gmail\service\UserService.class
+com\atguigu\gmail\bean\UmsMember.class
+com\atguigu\gmail\service\UmsMemberReceiveAddressService.class
+com\atguigu\gmail\bean\UmsMemberReceiveAddress.class
